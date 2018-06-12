@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+        .item li{
+            padding: 10px;
+            list-style-type: none;
+        }
+        .item li:nth-child(odd){
+            background-color: #dcdcdc;
+        }
+        .removeItem{
+            color: red;
+            float: right;
+            font-weight: bolder;
+            cursor: pointer;
+            list-style-type: none;
+        }
+        .removeItem:hover{
+            color: red;
+        }
     </style>
-    
 </head>
+
 <body>
-    <div id="text">
-        <h1>Test is successfull.</h1>
-        <h1>remote Storage is successfull</h1>
+
+    <div class="container">
+        <div class="col-md-6">
+            <br/>
+            <form action="" id="todo">
+                <input type="text" class="form-control" id="myValue" placeholder="enter todo">
+                <br/><button type="submit" id="fetchDaata" class="btn btn-warning">Submit</button>
+            </form>
+            <br/>
+            
+        </div>
+        <div class="col-md-6">
+            <br/>
+            <div class="item">
+
+            </div>
+        </div>
     </div>
-    <script  src="/app.js"></script>
+<script src="app.js"></script>
 </body>
+
 </html>
